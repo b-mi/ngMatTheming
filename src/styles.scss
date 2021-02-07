@@ -67,11 +67,7 @@ $dark-theme: mat-dark-theme(
 }
 
 body {
-    // font-family: 'Comfortaa', cursive;
-    /* font-family: 'Source Code Pro', monospace; */
-    /* font-family: Roboto, Arial, sans-serif; */
-    // display: flex;
-    // --bg: #{$bg-color};
+
     margin: 0;
     position: absolute;
     top: 0;
@@ -79,13 +75,6 @@ body {
     right: 0;
     bottom: 0;
     overflow: auto;
-    // background-color: var(--secondary-background) !important;
-    // background-color: var(--secondary-background);
-    // flex-direction: column;
-    // overscroll-behavior: contain;
-    // background-color: red !important;
 }
 
-html {
-    min-height: 50vh;
-}
+
