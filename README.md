@@ -6,6 +6,7 @@
 - service for switching themes `NgMatThemingService`
 - auto save selected theme (light/dark)
 - support for full height body material background color
+- update cdk Drag&Drop to change background color for dark theme
 - aditional classes
     - primary-foreground
     - primary-background
@@ -83,6 +84,11 @@ $dark-theme: mat-dark-theme(
 
 .secondary-background {
     background-color: var(--secondary-background);
+}
+
+.cdk-drag-preview {
+    color: var(--primary-foreground);
+    background-color: var(--primary-background);
 }
 
 body {

@@ -13,11 +13,14 @@ import { MatListModule } from '@angular/material/list';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { NgMatThemingModule } from 'ng-mat-theming';
 import { NgMatThemingService } from 'ng-mat-theming';
+import { DragDropDemoComponent } from './drag-drop-demo/drag-drop-demo.component';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavComponent
+    NavComponent,
+    DragDropDemoComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +32,8 @@ import { NgMatThemingService } from 'ng-mat-theming';
     MatSlideToggleModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    DragDropModule
   ],
   providers: [NgMatThemingService],
   bootstrap: [AppComponent]

@@ -66,6 +66,11 @@ $dark-theme: mat-dark-theme(
     background-color: var(--secondary-background);
 }
 
+.cdk-drag-preview {
+    color: var(--primary-foreground);
+    background-color: var(--primary-background);
+}
+
 body {
     margin: 0;
     position: absolute;
