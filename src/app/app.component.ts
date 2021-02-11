@@ -6,7 +6,7 @@ import { NgMatThemingService } from 'ng-mat-theming';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ngMatThemingLib';
+  title = 'ng-mat-theming';
   constructor(public themeService: NgMatThemingService) {
 
   }
