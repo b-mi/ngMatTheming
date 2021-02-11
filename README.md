@@ -14,11 +14,12 @@ Usage
 - add `NgMatThemingService` into providers
 
 # Updates of styles.scss
-- add [Angular Material support for multiple themes] (https://material.angular.io/guide/theming#example-of-defining-multiple-themes)
+- add [Angular Material multiple themes](https://material.angular.io/guide/theming#example-of-defining-multiple-themes)
 - rename class `.unicorn-dark-theme` to `.dark-theme`
 - add additional classes:
 
-`:root {
+```
+:root {
     --primary-background: #ffffff;
     --secondary-background: #fafafa;
     --primary-foreground: #272727;
@@ -49,16 +50,19 @@ body {
 .theme-container {
     height: 100vh;
     background-color: var(--secondary-background);
-}`
+}
+```
 
 # Update of app.component.html
-`<div [ngClass]="{'dark-theme': themeService.isDark}" class="theme-container">
+```
+<div [ngClass]="{'dark-theme': themeService.isDark}" class="theme-container">
     <app-nav></app-nav>
-</div>`
+</div>
+```
 
 Replace element `<app-nav></app-nav>` with your main component
 
-
+------------------
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.4.
