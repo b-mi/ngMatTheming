@@ -1,4 +1,10 @@
 @echo off
+echo COPY
+copy c:\Data\repos\ngMatTheming\README.md c:\Data\repos\ngMatTheming\projects\ng-mat-theming\README.md /y
+echo UPDATE VERSION
+pushd projects\ng-mat-theming
+call npm version patch
+popd
 echo BUILDING LIBRARY
 call ng b --project ng-mat-theming
 echo BUILDING PROD
