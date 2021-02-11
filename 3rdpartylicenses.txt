@@ -88,6 +88,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 
 ng-mat-theming
+MIT
 
 rxjs
 Apache-2.0
