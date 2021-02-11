@@ -99,6 +99,10 @@ body {
 }
 ```
 
+# Update of app.component.ts
+add `import { NgMatThemingService } from 'ng-mat-theming';`
+add constructor `constructor(public themeService: NgMatThemingService)`
+
 # Update of app.component.html
 ```
 <div [ngClass]="{'dark-theme': themeService.isDark}" class="theme-container">
