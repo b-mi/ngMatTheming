@@ -15,11 +15,11 @@
 # [Demo](https://b-mi.github.io/ngMatTheming/)
 # Usage
 
-- ng new testApp
-- cd testApp
+- `ng new testApp`
+- `cd testApp`
 - install [Angular Material](https://material.angular.io/guide/getting-started)
-    - ng add @angular/material
-- npm i ng-mat-theming
+    - `ng add @angular/material`
+- `npm i ng-mat-theming`
 
 # Updates of app.module.ts
 - add:
