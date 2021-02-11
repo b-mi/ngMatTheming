@@ -16,16 +16,6 @@ export class ThemeSlideToggleComponent implements OnInit {
     this._title = v;
   }
 
-
-  private _setDarkTheme: number;
-  public get setDarkTheme(): number {
-    return this._setDarkTheme;
-  }
-  @Input()
-  public set setDarkTheme(v: number) {
-    this.themeService.isDark = v;
-  }
-
   constructor(public themeService: NgMatThemingService) {
   }
 

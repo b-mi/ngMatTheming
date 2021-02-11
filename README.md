@@ -18,16 +18,23 @@
 - ng new testApp
 - cd testApp
 - install [Angular Material](https://material.angular.io/guide/getting-started)
+    - ng add @angular/material
 - npm i ngMatTheming
 
 # Updates of app.module.ts
-- add `import { NgMatThemingModule } from 'ng-mat-theming';`
-- add `NgMatThemingModule` into imports
-- add `import { NgMatThemingService } from 'ng-mat-theming';`
+- add:
+```
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { NgMatThemingModule } from 'ng-mat-theming';
+import { NgMatThemingService } from 'ng-mat-theming';
+```
+- add `MatToolbarModule, MatSlideToggleModule, NgMatThemingModule` into imports
 - add `NgMatThemingService` into providers
 
 # Updates of styles.scss
-- add:
+- replace content of styles.scss:
+    - this content is nearly the same as [Angular Material Theming](https://material.angular.io/guide/theming#multiple-themes)
 ```
 @import "~@angular/material/theming";
 @include mat-core();
@@ -105,20 +112,26 @@ body {
     height: 100vh;
     background-color: var(--secondary-background);
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 ```
 
 # Update of app.component.ts
 add `import { NgMatThemingService } from 'ng-mat-theming';`
-add constructor `constructor(public themeService: NgMatThemingService)`
+add constructor `constructor(public themeService: NgMatThemingService) { }`
 
 # Update of app.component.html
+Replace content of app.component.html by:
 ```
 <div [ngClass]="{'dark-theme': themeService.isDark}" class="theme-container">
-    <app-nav></app-nav>
+  <mat-toolbar color="primary">
+    <theme-slide-toggle></theme-slide-toggle>
+  </mat-toolbar>
 </div>
 ```
 
-Replace element `<app-nav></app-nav>` with your main component
+Replace content of div element by your main component (mat-sidenav or  router-outlet)
 
 ------------------
 
