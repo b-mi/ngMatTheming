@@ -27,10 +27,6 @@ export class ThemeSlideToggleComponent implements OnInit {
   }
 
   constructor(public themeService: NgMatThemingService) {
-
-    console.log('lib toggle ctr', this.themeService.isDark);
-
-
   }
 
   ngOnInit(): void {
