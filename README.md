@@ -1,4 +1,4 @@
-# NgMatThemingLib
+# NgMatTheming
 
 # Features
 - suport two themes - configurable in styles.scss
@@ -25,10 +25,23 @@
 
 # Updates of styles.scss
 - add [Angular Material multiple themes](https://material.angular.io/guide/theming#example-of-defining-multiple-themes)
-- rename class `.unicorn-dark-theme` to `.dark-theme`
+- remove this at the end:
+```
+        .unicorn-dark-theme {
+        @include angular-material-color($dark-theme);
+        }
+```    
 - add additional classes:
 
 ```
+
+.dark-theme {
+    --primary-background: #424242;
+    --secondary-background: #4a4a4a;
+    --primary-foreground: #ffffff;
+    @include angular-material-color($dark-theme);
+}
+
 :root {
     --primary-background: #ffffff;
     --secondary-background: #fafafa;
