@@ -118,8 +118,8 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 ```
 
 # Update of app.component.ts
-add `import { NgMatThemingService } from 'ng-mat-theming';`
-add constructor `constructor(public themeService: NgMatThemingService) { }`
+- add `import { NgMatThemingService } from 'ng-mat-theming';`
+- add constructor `constructor(public themeService: NgMatThemingService) { }`
 
 # Update of app.component.html
 Replace content of app.component.html by:

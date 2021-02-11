@@ -9,5 +9,6 @@ echo CREATE PACKAGE
 pushd dist\ng-mat-theming
 call npm pack
 dir *.tgz
+call npm publish --access public
 popd
 pause
