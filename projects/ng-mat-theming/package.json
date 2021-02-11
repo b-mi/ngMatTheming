@@ -1,6 +1,6 @@
 {
   "name": "ng-mat-theming",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "peerDependencies": {
     "@angular/common": "^10.1.6",
     "@angular/core": "^10.1.6",
@@ -8,5 +8,15 @@
   },
   "dependencies": {
     "tslib": "^2.0.0"
-  }
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/b-mi/ngMatTheming.git"
+  },
+  "description": "Angular dynamic theme changer",
+  "bugs": {
+    "url": "https://github.com/b-mi/ngMatTheming/issues"
+  },
+  "homepage": "https://github.com/b-mi/ngMatTheming"
 }
