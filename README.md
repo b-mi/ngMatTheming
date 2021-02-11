@@ -1,5 +1,15 @@
-# ngMatTheming
-Angular material dynamic theme changer
+# NgMatThemingLib
+
+Usage
+
+- ng new testApp
+- cd testApp
+- install [Angular Material](https://material.angular.io/guide/getting-started)
+- npm i ngMatTheming
+- into app.module.ts add `import { NgMatThemingModule } from 'ng-mat-theming';`
+- into app.module.ts add `import { NgMatThemingService } from 'ng-mat-theming';`
+
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.4.
 

@@ -1,14 +1,11 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { ThemeService } from '../theme.service';
-
+import { NgMatThemingService } from '../ng-mat-theming.service';
 @Component({
-  selector: 'app-theme-toggle',
-  templateUrl: './theme-toggle.component.html',
-  styleUrls: ['./theme-toggle.component.css']
+  selector: 'theme-slide-toggle',
+  templateUrl: './theme-slide-toggle.component.html',
+  styleUrls: ['./theme-slide-toggle.component.css']
 })
-export class ThemeToggleComponent implements OnInit {
-
-
+export class ThemeSlideToggleComponent implements OnInit {
 
   private _title: string = "Dark theme";
   public get title(): string {
@@ -29,7 +26,12 @@ export class ThemeToggleComponent implements OnInit {
     this.themeService.isDark = v;
   }
 
-  constructor(public themeService: ThemeService) { }
+  constructor(public themeService: NgMatThemingService) {
+
+    console.log('lib toggle ctr', this.themeService.isDark);
+
+
+  }
 
   ngOnInit(): void {
   }

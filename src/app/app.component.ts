@@ -1,21 +1,13 @@
 import { Component } from '@angular/core';
-import { ThemeService } from "./theme.service";
-
+import { NgMatThemingService } from 'ng-mat-theming';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ngTheming';
+  title = 'ngMatThemingLib';
+  constructor(public themeService: NgMatThemingService) {
 
-  constructor(public themeService: ThemeService) {
-  }
-
-  th1() {
-    this.themeService.toggle();
-  }
-
-  th2() {
   }
 }

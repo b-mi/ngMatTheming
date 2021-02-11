@@ -1,12 +1,11 @@
-<mat-sidenav-container color="primary" class="sidenav-container">
+<mat-sidenav-container class="sidenav-container">
   <mat-sidenav #drawer class="sidenav" fixedInViewport [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
     [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="(isHandset$ | async) === false">
-    <mat-toolbar color="primary"> <span>Menu</span></mat-toolbar>
+    <mat-toolbar>Menu</mat-toolbar>
     <mat-nav-list>
       <a mat-list-item href="#">Link 1</a>
-      <a mat-list-item href="#" (click)="setLight()">Light theme</a>
-      <a mat-list-item href="#" (click)="setDark()">Dark theme</a>
-      <a mat-list-item href="#" (click)="toggleTheme()">Toggle theme</a>
+      <a mat-list-item href="#">Link 2</a>
+      <a mat-list-item href="#">Link 3</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -15,39 +14,11 @@
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>ngTheming</span>
-      <span class="spacer"></span>
-      <app-theme-toggle title="Dark theme"></app-theme-toggle>
-
+      <span>ngMatThemingLib</span>
     </mat-toolbar>
-
-
-
-    <mat-card>
-      <mat-card-header>
-        <mat-card-title>title</mat-card-title>
-        <span class="spacer"></span>
-        <app-theme-toggle title="Dark theme"></app-theme-toggle>
-
-        <mat-card-subtitle>subtitle</mat-card-subtitle>
-      </mat-card-header>
-      <mat-card-content>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, ad reprehenderit! Odit minus quod, fuga aperiam
-        odio quos. Nihil fuga repellat porro delectus quae non inventore, nemo unde omnis accusantium.
-      </mat-card-content>
-
-
-      <mat-card-content>
-        <app-drag-drop-sample></app-drag-drop-sample>
-      </mat-card-content>
-
-      <mat-card-actions>
-        <button mat-raised-button color="warn" (click)="setDark()">Set Dark</button>
-        <button mat-raised-button color="accent" (click)="setLight()">Set Light</button>
-      </mat-card-actions>
-    </mat-card>
-
-
-
+    <!-- Add Content Here -->
+    <p>
+      <theme-slide-toggle></theme-slide-toggle>
+    </p>
   </mat-sidenav-content>
 </mat-sidenav-container>

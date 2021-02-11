@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
-import { ThemeService } from '../theme.service';
 
 @Component({
   selector: 'app-nav',
@@ -11,26 +10,12 @@ import { ThemeService } from '../theme.service';
 })
 export class NavComponent {
 
-  isHandset$: Observable<boolean> = this.breakpointObserver.observe([Breakpoints.Handset, Breakpoints.Small])
+  isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
     .pipe(
       map(result => result.matches),
       shareReplay()
     );
 
-  constructor(private breakpointObserver: BreakpointObserver,
-    public themeService: ThemeService) { }
-
-  setLight() {
-    this.themeService.setLight();
-    
-  }
-
-  setDark() {
-    this.themeService.setDark();
-  }
-
-  toggleTheme(){
-    this.themeService.toggle();
-  }
+  constructor(private breakpointObserver: BreakpointObserver) {}
 
 }

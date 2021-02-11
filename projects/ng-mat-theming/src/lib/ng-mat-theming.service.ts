@@ -3,21 +3,18 @@ import { Injectable, Provider } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
-
-export class ThemeService {
+export class NgMatThemingService {
   storeKey: string;
 
-
-  
-  private _isDark : number;
-  public get isDark() : number {
+  private _isDark: number;
+  public get isDark(): number {
     return this._isDark;
   }
-  public set isDark(v : number) {
+  public set isDark(v: number) {
     this._isDark = v;
     this.tryStore();
   }
-  
+
 
   Init(arg0: string) {
     this.storeKey = arg0;
@@ -49,6 +46,7 @@ export class ThemeService {
       localStorage.setItem(this.storeKey, this.isDark.toString());
     }
   }
-
-  constructor() { }
+  constructor() { 
+    this.Init('ng-mat-theming-store-key');
+  }
 }

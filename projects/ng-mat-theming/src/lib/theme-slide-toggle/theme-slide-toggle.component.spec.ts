@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ThemeToggleComponent } from './theme-toggle.component';
+import { ThemeSlideToggleComponent } from './theme-slide-toggle.component';
 
-describe('ThemeToggleComponent', () => {
-  let component: ThemeToggleComponent;
-  let fixture: ComponentFixture<ThemeToggleComponent>;
+describe('ThemeSlideToggleComponent', () => {
+  let component: ThemeSlideToggleComponent;
+  let fixture: ComponentFixture<ThemeSlideToggleComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ThemeToggleComponent ]
+      declarations: [ ThemeSlideToggleComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ThemeToggleComponent);
+    fixture = TestBed.createComponent(ThemeSlideToggleComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
