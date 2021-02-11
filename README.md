@@ -1,6 +1,16 @@
 # NgMatThemingLib
 
-Usage
+# Features
+- suport two themes - configurable in styles.scss
+- component `theme-slide-toggle` based on Material `mat-slide-toggle` for switching theme
+- service for switching themes `NgMatThemingService`
+- auto save selected theme (light/dark)
+- support for full height body material background color
+- aditional classes
+    - primary-foreground
+    - primary-background
+    - secondary-background
+# Usage
 
 - ng new testApp
 - cd testApp
