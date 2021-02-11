@@ -19,7 +19,7 @@
 - cd testApp
 - install [Angular Material](https://material.angular.io/guide/getting-started)
     - ng add @angular/material
-- npm i ngMatTheming
+- npm i ng-mat-theming
 
 # Updates of app.module.ts
 - add:

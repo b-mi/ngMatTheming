@@ -9,6 +9,8 @@ echo CREATE PACKAGE
 pushd dist\ng-mat-theming
 call npm pack
 dir *.tgz
+echo V c:\Data\repos\ngMatTheming\dist\ng-mat-theming\package.json treba vyradit prepublish skript
+pause
 call npm publish --access public
 popd
 pause
