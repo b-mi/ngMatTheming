@@ -10,11 +10,6 @@ body {
 }
 
 @import "~@angular/material/theming";
-// Plus imports for other components in your app.
-
-// Include the common styles for Angular Material. We include this here so that you only
-// have to load a single css file for Angular Material in your app.
-// **Be sure that you only ever include this mixin once!**
 @include mat-core();
 
 // Define the default theme (same as the example above).
@@ -46,9 +41,6 @@ $dark-theme: mat-dark-theme(
     )
 );
 
-// Include the dark color styles inside of a block with a CSS class. You can make this
-// CSS class whatever you want. In this example, any component inside of an element with
-// `.dark-theme` will be affected by this alternate dark theme instead of the default theme.
 .dark-theme {
     --primary-background: #424242;
     --secondary-background: #4a4a4a;
@@ -56,7 +48,6 @@ $dark-theme: mat-dark-theme(
     @include angular-material-color($dark-theme);
 }
 
-// light
 :root {
     --primary-background: #ffffff;
     --secondary-background: #fafafa;

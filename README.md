@@ -24,16 +24,39 @@
 - add `NgMatThemingService` into providers
 
 # Updates of styles.scss
-- add [Angular Material multiple themes](https://material.angular.io/guide/theming#example-of-defining-multiple-themes)
-- remove this at the end:
+- add:
 ```
-        .unicorn-dark-theme {
-        @include angular-material-color($dark-theme);
-        }
-```    
-- add additional classes:
+@import "~@angular/material/theming";
+@include mat-core();
 
-```
+// Define the default theme (same as the example above).
+$light-primary: mat-palette($mat-indigo);
+$light-accent: mat-palette($mat-pink, A200, A100, A400);
+$light-theme: mat-light-theme(
+    (
+        color: (
+            primary: $light-primary,
+            accent: $light-accent,
+        ),
+    )
+);
+
+// Include the default theme styles (color and default density)
+@include angular-material-theme($light-theme);
+
+// Define an alternate dark theme.
+$dark-primary: mat-palette($mat-light-green);
+$dark-accent: mat-palette($mat-amber, A200, A100, A400);
+$dark-warn: mat-palette($mat-deep-orange);
+$dark-theme: mat-dark-theme(
+    (
+        color: (
+            primary: $dark-primary,
+            accent: $dark-accent,
+            warn: $dark-warn,
+        ),
+    )
+);
 
 .dark-theme {
     --primary-background: #424242;
