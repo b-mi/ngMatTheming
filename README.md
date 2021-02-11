@@ -10,6 +10,8 @@
     - primary-foreground
     - primary-background
     - secondary-background
+
+# [Demo](https://b-mi.github.io/ngMatTheming/)
 # Usage
 
 - ng new testApp
