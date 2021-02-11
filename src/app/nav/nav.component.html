@@ -1,11 +1,11 @@
 <mat-sidenav-container class="sidenav-container">
   <mat-sidenav #drawer class="sidenav" fixedInViewport [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
     [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="(isHandset$ | async) === false">
-    <mat-toolbar>Menu</mat-toolbar>
+    <mat-toolbar color="primary">Menu</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item href="#">Link 1</a>
-      <a mat-list-item href="#">Link 2</a>
-      <a mat-list-item href="#">Link 3</a>
+      <a mat-list-item href="#" (click)="themeService.setLight()">Set Light Theme</a>
+      <a mat-list-item href="#" (click)="themeService.setDark()">Set Dark Theme</a>
+      <a mat-list-item href="#" (click)="themeService.toggle()">Toggle Theme</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
