@@ -33,8 +33,7 @@ import { NgMatThemingService } from 'ng-mat-theming';
 - add `NgMatThemingService` into providers
 
 # Updates of styles.scss
-- replace content of [styles.scss](https://github.com/b-mi/ngMatTheming/blob/main/src/styles.scss):
-    - this content is nearly the same as [Angular Material Theming](https://material.angular.io/guide/theming#multiple-themes)
+- replace content of styles.scss by this: [styles.scss](https://github.com/b-mi/ngMatTheming/blob/main/src/styles.scss):
 
 # Update of app.component.ts
 - add `import { NgMatThemingService } from 'ng-mat-theming';`
