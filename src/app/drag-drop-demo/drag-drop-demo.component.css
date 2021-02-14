@@ -22,6 +22,11 @@
   font-size: 14px;
 }
 
+.list-item:nth-child(odd) {
+  background: var(--secondary-background);
+}
+
+
 .list-item:last-child {
   border: none;
 }
