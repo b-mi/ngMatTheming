@@ -34,7 +34,7 @@ import { NgMatThemingService } from 'ng-mat-theming';
 
 # Updates of styles.scss
 - replace content of styles.scss by this: [styles.scss](https://github.com/b-mi/ngMatTheming/blob/main/src/styles.scss):
-
+- then you can change themes colors
 # Update of app.component.ts
 - add `import { NgMatThemingService } from 'ng-mat-theming';`
 - add constructor `constructor(public themeService: NgMatThemingService) { }`
