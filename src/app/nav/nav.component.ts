@@ -12,6 +12,7 @@ import { NgMatThemingService } from 'ng-mat-theming';
 })
 export class NavComponent {
 
+  title = 'App title';
   isHandset$: Observable<boolean> = this.breakpointObserver.observe([Breakpoints.Handset, Breakpoints.Small])
     .pipe(
       map(result => {
@@ -21,7 +22,7 @@ export class NavComponent {
     );
 
   constructor(private breakpointObserver: BreakpointObserver,
-    public themeService: NgMatThemingService) { 
-    }
+    public themeService: NgMatThemingService) {
+  }
 
 }
