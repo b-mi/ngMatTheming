@@ -6,16 +6,6 @@ import { NgMatThemingService } from '../ng-mat-theming.service';
   styleUrls: ['./theme-slide-toggle.component.css']
 })
 export class ThemeSlideToggleComponent implements OnInit {
-
-  private _title: string = "Dark theme";
-  public get title(): string {
-    return this._title;
-  }
-  @Input()
-  public set title(v: string) {
-    this._title = v;
-  }
-
   constructor(public themeService: NgMatThemingService) {
   }
 

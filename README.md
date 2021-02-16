@@ -44,7 +44,7 @@ Replace content of app.component.html by:
 ```
 <div [ngClass]="{'dark-theme': themeService.isDark}" class="theme-container">
   <mat-toolbar color="primary">
-    <theme-slide-toggle></theme-slide-toggle>
+    <theme-slide-toggle>Dark theme</theme-slide-toggle>
   </mat-toolbar>
 </div>
 ```
