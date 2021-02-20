@@ -19,6 +19,26 @@ import { NgMatThemingService } from 'ng-mat-theming';
 import { DragDropDemoComponent } from './drag-drop-demo/drag-drop-demo.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 
+const themesSettings =
+{
+  lightAppColor: '#FAFAFA',
+  lightSecondaryColor: '#EAEAEA',
+  lightDefaultColor: '#FFFFFF',
+  lightPrimaryColor: '#3F51B5',
+  lightAccentColor: '#FF4081',
+  lightWarnColor: '#F44336',
+  lightTextColor: '#272727',
+
+  darkAppColor: '#303030',
+  darkSecondaryColor: '#4A4A4A',
+  darkDefaultColor: '#424242',
+  darkPrimaryColor: '#8BC34A',
+  darkAccentColor: '#FFD740',
+  darkWarnColor: '#FF5722',
+  darkTextColor: '#FFFFFF',
+};
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,7 +59,10 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
     MatListModule,
     DragDropModule
   ],
-  providers: [NgMatThemingService],
+  providers: [
+    // { provide: 'themeParams', useValue: themesSettings }
+    NgMatThemingService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {
